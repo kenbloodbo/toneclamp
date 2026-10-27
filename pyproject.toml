@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kenbloodbo-toneclamp"
+version = "0.1.0"
+description = "找出语气类要求（正式、口语、简洁、详尽）并检测互相矛盾与无法执行的情况"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "kenbloodbo" }]
+keywords = ["analysis", "observability", "evaluation", "rag"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://kenbloodbo.github.io"
+Repository = "https://github.com/kenbloodbo/toneclamp"
+Issues = "https://github.com/kenbloodbo/toneclamp/issues"
+
+[project.scripts]
+toneclamp = "toneclamp:main"
+
+[tool.setuptools]
+py-modules = ["toneclamp"]
